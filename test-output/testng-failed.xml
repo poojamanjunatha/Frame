@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="firefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Script.LoginScript">
+        <methods>
+          <include name="loginscript"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.LoginScript -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test name="chromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Script.LoginScript">
+        <methods>
+          <include name="loginscript"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- Script.LoginScript -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
